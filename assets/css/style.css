@@ -1,0 +1,107 @@
+/* ========== GOOGLE FONTS ========== */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+/* ========== VARIABLES CSS ========== */
+:root {
+    --header-height: 3.5rem;
+
+    /* ========== Colors ========== */
+    --tag-color: #883AE1;
+    --tag-color-alt: #E6D6FC;
+    --title-color: #20293A;
+    --text-colot: #6C727F;
+    --box-shadow-color: #E5EAF0;
+    --bg-color: #FAFAF9;
+    --white-color: #FFFFFF;
+    /* ========== Fonts and typography */
+    --body-font: "Sora", sans-serif;
+    --biggest-font-size: 1.125rem;
+    --normal-font-size: 0.875rem;
+    --small-font-size: 0.75rem;
+    --tag-font-size: 0.625rem;
+}
+
+/* ========== BASE ========== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+hr {
+    height: 1px;
+    margin: 0 0 1.25rem 0;
+    border: none;
+    background-color: var(--box-shadow-color);
+}
+
+/* ========== CARD ========== */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.card {
+    width: 23rem;
+    height: auto;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    box-shadow: .8rem .8rem 2rem 0px var(--box-shadow-color);
+}
+
+.card-header img {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 1.8rem;
+}
+
+.card-body {
+    padding: 0 1rem 1.25rem;
+}
+
+.card-title {
+    margin: 0 0 .4rem 0;
+    font-size: var(--biggest-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.card-tag {
+    display: inline-block;
+    margin: 0 0 1rem 0;
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+    font-size: var(--tag-font-size);
+    font-weight: 600;
+    color: var(--tag-color);
+    background-color: var(--tag-color-alt);
+}
+
+.card-text {
+    font-size: var(--normal-font-size);
+    font-weight: 300;
+    line-height: 1.4rem;
+    color: var(--text-colot);
+}
+
+.card-footer {
+    padding: 0 1rem 1.25rem;
+}
+
+.card-footer p {
+    font-size: var(--small-font-size);
+    font-weight: 300;
+    color: var(--text-colot);
+}
